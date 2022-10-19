@@ -14,4 +14,4 @@
 <img src="./READMEASSET/로그인후메인.png" width="700px" height="600px"><br><br><br>
 
 - 내가 찜한 콘텐츠
-<img src="./README>ASSET/내가찜한콘텐츠.png" width="700px" height="600px"><br><br><br>
+<img src="./README>ASSET/내가찜한콘텐츠.png" width="700px" height="700px"><br><br><br>
