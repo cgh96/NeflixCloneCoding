@@ -1,0 +1,579 @@
+* {
+    margin: 0;
+    font-size: 16px;
+}
+
+body {
+    min-width: 600px;
+}
+
+a, a:hover, a:visited, a:link {
+    color: white;
+    text-decoration-line: none;
+}
+
+.index-point {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.192);
+}
+
+.first-background {
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 8px solid #222;
+    height: 689px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.859), rgba(0, 0, 0, 0.522), rgba(0, 0, 0, 0.938)),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/79fe83d4-7ef6-4181-9439-46db72599559/296a32a7-870c-4ebe-a49c-0f4223eff344/KR-ko-20221017-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo {
+   margin: -36px 9rem 0 0;
+   max-width: 13em;
+}
+
+.lang-select-wrapper {
+    position: relative;
+    display: flex;
+    width: 133px;
+    height: 60px;
+}
+
+/** Netflix 원본 => ":after ::before
+    but ::after, ::before not working
+*/
+.globe-icon {
+    position: relative;
+    left: 2.02rem;
+    width: 0.88rem;
+    height: 0.88rem;
+    border-radius: 100%;
+    background-color: white;
+    background-image: url("../assets/globe.png");
+    background-repeat: no-repeat;
+    background-size: 0.88rem;
+    transform: translateY(100%);
+}
+
+.triangle {
+    z-index: 0;
+    position: relative;
+    right: 2.1rem;
+    width: 0.9rem;
+    height: 0.7rem;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../assets/selectTriangle.png");
+    background-repeat: no-repeat;
+    background-size: 0.8rem;
+    transform: translateY(125%);
+}
+
+#lang-select {
+    box-sizing: border-box;
+    z-index: 1000;
+    position:relative;
+    top: 2px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #aaa;
+    background-color: rgba(0,0,0,.2);
+    color: white;
+    text-align: center;
+    width: 6rem;
+    height: 2.3rem;
+    font-size: 0.88rem;
+    border-radius: 3px 3px;
+    padding: 0.5rem 0.8rem;
+    margin: 0px 9px;
+}
+
+.auth-link {
+    position: relative;
+    top: 2px;
+    box-sizing: border-box;
+    border: 1px solid red;
+    font-size: 0.9rem;
+    color: white;
+    background-color: red;
+    border-radius: 5px 5px;
+    padding: 0px 6px 3px;
+    width: 5.3rem;
+    height: 2.3rem;
+    margin: 0 9px;
+}
+
+.index-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 56px;
+    padding: 25px 0 0;
+}
+
+.card-text {
+    padding: 75px auto;
+    color: white;
+    max-width: 950px;
+    margin: 5rem auto;
+}
+
+.card-text h1 {
+    margin: 0 8.5rem;
+    font-size: 3.1rem;
+    font-weight: 100;
+}
+
+.card-text h2 {
+    margin: 1rem 8.5rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.card-text h3 {
+    margin: 0 4rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+@media(min-width: 1450px) {
+    .card-text h1 {
+        margin: 0 auto;
+        font-size: 4rem;
+        max-width: 540px;
+        font-weight: lighter;
+    }
+}
+
+
+#email-address {
+    min-width: 400px;
+    height: 63px;
+    font-size: 1.2em;
+    margin: 0 0 0 20px;
+    padding: 0 0 0 10px;
+    border: 0;
+}
+
+
+
+#email-address:focus {
+    outline: none;
+    height: 60px;
+    border-top: 2px solid white;
+    margin: 0 0 0 41px;
+    border-bottom: 2px solid #FFA00A;
+}
+
+.email-form button {
+    margin: 0 0 0 0;
+    padding: 0.7em 2em;
+    max-height: 64px;
+    background-color: red;
+    border: 0;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.email {
+    max-width: 600px;
+    margin: 0;
+    text-align: left;
+}
+
+.email label {
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    top: -2px;
+    left: 120px;
+    min-width: 20px;
+    min-height: 10px;
+    color: #808080b0;
+    font-size: 16px;
+}
+
+.form-outline {
+    display: flex; 
+    margin: 0.5rem;
+}
+
+@media (max-width: 940px) {
+    .form-outline {
+        display: block;
+        text-align: center;
+    }
+
+    .email-form button {
+        margin: 20px 0 0 -1.5rem;
+    }
+}
+
+#go-to-main {
+    font-size: 1.3rem;
+}
+
+
+#go-to-main:visited, #go-to-main:hover, #go-to-main {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 940px) {
+    * {
+        margin: 0;
+        font-size: 12px;
+    }
+    
+    .index-point {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.192);
+    }
+    
+    .first-background {
+        overflow: hidden;
+        border-bottom: 8px solid #222;
+        height: 689px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.938)),
+        url("https://assets.nflxext.com/ffe/siteui/vlv3/79fe83d4-7ef6-4181-9439-46db72599559/296a32a7-870c-4ebe-a49c-0f4223eff344/KR-ko-20221017-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    #logo {
+       margin: -2rem 9rem 0 0;
+       max-width: 13em;
+    }
+    
+    .lang-select-wrapper {
+        display: flex;
+    }
+    
+    .globe-icon {
+        position: relative;
+        left: 2.05rem;
+        width: 0.88rem;
+        height: 0.88rem;
+        border-radius: 100%;
+        background-color: white;
+        background-image: url("../assets/globe.png");
+        background-repeat: no-repeat;
+        background-size: 0.88rem;
+    }
+    
+    #lang-select {
+        position:relative;
+        top: 2px;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border: 1px solid #aaa;
+        background-color: rgba(0,0,0,.2);
+        color: white;
+        text-align: center;
+        width: 5.8rem;
+        height: 2rem;
+        font-size: 0.88rem;
+        border-radius: 3px 3px;
+        margin: 0px 9px;
+    }
+    
+    .triangle {
+        position: relative;
+        right: 2.1rem;
+        background-color: rgba(0,0,0,0);
+        background-image: url("../assets/selectTriangle.png");
+        background-repeat: no-repeat;
+        background-size: 0.86rem;
+        width: 0.88rem;
+        height: 0.8rem;
+        transform: translateY(110%);
+    }
+    
+    .auth-link {
+        position: relative;
+        top: 2px;
+        box-sizing: border-box;
+        border: 1px solid red;
+        font-size: 0.9rem;
+        color: white;
+        background-color: red;
+        border-radius: 5px 5px;
+        padding: 0px 6px 3px;
+        width: 5.3rem;
+        height: 2rem;
+        margin: 0 9px;
+    }
+    
+    .index-header-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 56px;
+        padding: 25px 0 0;
+    }
+}
+
+/**==================================================*/
+/** section  section  section  section */
+/** section  section  section  section */
+
+
+/*111111*/
+.card-section {
+    text-align: center;
+    padding: 70px 45px;
+    background-color: black;
+    color: white;
+    height: 360px;
+    border-bottom: 8px solid #222;
+}
+
+.animation-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 70%;
+    transform: translateY(10%);
+}
+
+.section-title {
+    max-width: 550px;
+    min-width: 400px;
+    padding: 40px;
+}
+
+.section-title h1 {
+    font-size: 3.125rem;
+    margin: 0 0 8px 0;
+    text-align: left;
+}
+
+.section-title h2 {
+    font-size: 1.625rem;
+    font-weight: 400;
+    text-align: left;
+    margin: 0.75rem 0 0.25rem 0;
+}
+
+@media screen and (max-width: 940px) {
+    .card-section {
+       height: 550px;
+    }
+
+    .animation-card-container {
+        flex-direction: column;
+        align-content: center;
+        position: relative;
+        top: 130px;
+    }
+
+    .section-title h1 {
+        font-size: 33px;
+    }
+
+    .section-title h2 {
+        font-size: 21x;
+        font-weight: 300;
+        width: 500px;
+    }
+
+    .img-video-container {
+        max-width: 450px;
+        position: relative;
+        top: -118px;
+    }
+}
+
+.img-video-container {
+    max-width: 550px;
+}
+
+.video-outline-img {
+    z-index: 2000;
+    max-width: 530px;
+    position: relative;
+    top: 110px;
+}
+
+.section-video {
+    position: relative;
+    bottom: 210px;
+    max-width: 390px;
+}
+
+
+/**====================*/
+/**22222*/
+
+#stranger-container {
+    transform: translateY(15%);
+}
+
+#stranger-things-woman {
+    width: 260px;
+}
+
+#stranger-things {
+    position: relative;
+    top: 0;
+    left: 5px;
+    width: 62px;
+}
+
+
+.device-img { 
+    position: relative;
+    top: -130px;
+    z-index: 1000;
+    display:flex;
+    align-items: center;
+    color: white;
+    background-color: black;
+    border: 3px solid #222;
+    border-radius: 10px 10px;
+    width: 300px;
+    height: 95px;
+}
+
+.text-in-device {
+    margin: 0 0 0 22px;
+}
+
+#stranger-section-title {
+    position: relative;
+    left: 100px;
+    width: 330px;
+}
+
+#stranger-section-title h1 {
+    font-size: 2.8rem; 
+    font-weight: 400;
+}
+
+@media screen and (max-width: 940px) {
+    #stranger-container {
+        transform: translateY(30%);
+    }
+
+
+    #stranger-section {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-items: center;
+        position: relative;
+        top: 40px;
+    }
+     
+    #stranger-things-woman {
+        width: 80%;
+    }
+
+    #stranger-section-title {
+        margin: 50px 200px 0 0
+    }
+
+    #stranger-section-title h1 {
+        position: relative;
+        margin: 0 0 0 40px;
+        right: 100px;
+        width: 500px;
+        text-align:center;
+        font-size: 2.2rem;
+    }
+
+}
+
+
+
+/** footer */
+.card-footer {
+    margin: 0 auto;
+    background-color: black;
+    padding: 80px 60px;
+    height: 380px;
+    text-align: center;
+}
+
+.card-footer * {
+    color: #737373;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+
+}
+
+.footer-wrapper {
+    text-align: center;
+}
+
+.footer-ul {
+    display: block;
+    text-align: left;
+    list-style: none;
+    max-width: 800px;
+    padding: 0;
+}
+
+.footer-ul li {
+    float: left;
+    padding-right: 12px;
+    margin-bottom: 16px;
+    width: 170px;
+    min-width: 100px;
+    text-align: left;
+    font-size: 0.80rem;
+    cursor: pointer;
+}
+
+.footer-ul li:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer-ul li {
+        min-width: 30px;
+    }
+
+    #footer-globe {
+        top: 7px;
+        left: 40px;
+    }
+
+    #footer-triangle {
+        top: 5px;
+        right: 40px;
+    }
+}
+
+.lang-select-position {
+    max-width: 1000px;
+    text-align: left;
+    margin: 0 auto 0 -25px;
+}
+
+#second-lang-select {
+    margin: 0;
+    position: relative;
+    width: 300px;
+}
+
+.text-block, .text-block a{
+    text-align: left;
+    font-size: 0.855rem;
+}
+
+.lang-select-wrapper {
+    display: flex;
+}
+
+.footer-menu {
+    min-height: 180px;
+}
+

@@ -3,12 +3,120 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Netflix</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>넷플릭스&nbsp;대한민국 - 인터넷으로 시리즈와 영화를 시청하세요</title>
         <link rel="shorcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
-        <script type="module" src="index.js"></script>
+        <link rel="stylesheet" href="./css/index.css">
+        
+        <script type="module" src="./js/index.js"></script>
     </head>
     <body>
-        <div id="root"></div>
+        <div class="index-point">
+            <div class="first-background">
+                <div class="index-header-wrapper">
+                    <img id="logo" src="./assets/logo.png" />
+                    <div class="option-wrapper" style="display:flex">
+                        <div class="lang-select-wrapper">
+                            <div class="globe-icon" ></div>    
+                            <select id="lang-select">
+                                <option selected lang="ko" value="ko">한국어</option>
+                                <option lang="en" value="en">English</option>
+                            </select>
+                            <div class="triangle"></div>
+                        </div>
+                        <button class="auth-link" style="cursor:pointer"><a href="./login.html">로그인</a></button>
+                    </div>
+                </div>
+                <div class="card-text">
+                    <h1>영화와 시리즈를 무제한으로.</h1>
+                    <h2>다양한 디바이스에서 시청하세요. 언제든 해지하실 수 있습니다.</h2>
+                    <form class="email-form">
+                        <h3>시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.</h3>
+                        <div class="form-outline" >
+                            <div class="email">
+                                <label for="email-address">이메일 주소</label>
+                                <input type="email" id="email-address" autocomplete="off"/>
+                            </div>
+                            <button><a id="go-to-main" href="./main.html" style="padding: 0;">시작하기 ></a></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <section class="card-section">
+                <div class="animation-card-container">
+                    <div class="section-title">
+                        <h1>TV로 즐기세요.</h1>
+                        <h2>스마트 TV, playstation, XBOX, Chromecast, Apple TV, 블루레이 플레이어 등 다양한 디바이스에서 시청하세요.</h2>
+                    </div>
+                    <div class="img-video-container">
+                        <div class="img-container">
+                            <img class="video-outline-img" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" />
+                        </div>
+                        <div class="video-container">
+                            <video class="section-video" autoplay playsinline muted loop>
+                            <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4">                            </video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="card-section">
+                <div class="animation-card-container" id="stranger-section">
+                    <div class="img-video-container" id="stranger-container">
+                        <img id="stranger-things-woman" src="./assets/stranger-woman.png" />
+                        <div class="device-img">
+                            <img class="video-outline-img" id="stranger-things" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" />
+                            <div class="text-in-device">
+                                <div class="title">기묘한 이야기</div>
+                                <div class="state" style="text-align: left; color:#0071EB;">저장 중...</div>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="section-title" id="stranger-section-title">
+                        <h1>즐겨 보는 콘텐츠를 저장해 오프라인으로 시청하세요.</h1>
+                        <h2>간편하게 저장하고 빈틈없이 즐겨보세요.</h2>
+                    </div>
+                </div>
+            </section>
+            <footer class="card-footer">
+                <div class="footer-wrapper">
+                    <p style="display: block; margin: 0 0 27px -1px; text-align: left; font-size: 16px; font-size: 13px;">질문이 있으신가요? 문의전화: 080-001-9587</p>
+                    <ul class="footer-ul">
+                        <li class="footer-li">자주 묻는 질문</li>
+                        <li class="footer-li">고객 센터</li>
+                        <li class="footer-li">계정</li>
+                        <li class="footer-li">미디어 센터</li>
+                        <li class="footer-li">투자 정보(IR)</li>
+                        <li class="footer-li">입사 정보</li>
+                        <li class="footer-li">넷플릭스 지원 디바이스</li>
+                        <li class="footer-li">이용 약관</li>
+                        <li class="footer-li">개인 정보</li>
+                        <li class="footer-li">쿠키 설정</li>
+                        <li class="footer-li">회사 정보</li>
+                        <li class="footer-li">문의하기</li>
+                        <li class="footer-li">속도 테스트</li>
+                        <li class="footer-li">법적 고지</li>
+                        <li class="footer-li">오직 넷플릭스에서</li>
+                    </ul>
+                    <div class="lang-select-position">
+                        <div class="lang-select-wrapper" id="second-lang-select">
+                            <div class="globe-icon" id="footer-globe" style="background-size: 14px; width: 15px; margin: 0;"></div>
+                            <select id="lang-select" style="box-sizing: border-box; height: 40px; width: 110px; padding: 10px 0; border: 1px solid #222;">
+                                <option selected lang="ko" value="ko">한국어</option>
+                                <option lang="en" value="en">English</option>
+                            </select>
+                            <div class="triangle" id="footer-triangle" style="margin:1px 0 0 0; width: 20px;"></div>
+                        </div>
+                    </div>
+                    <p style="text-align: left; font-size:11px; margin: 0 0 13px 0;">넷플릭스 대한민국</p>
+                    <div class="text-block">넷플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-서울종로-0426호 전화번호: 080-001-9587</div>
+                    <div class="text-block">대표: 레지널드 숀 톰프슨</div>
+                    <div class="text-block">이메일 주소: korea@netflix.com</div>
+                    <div class="text-block">주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 우편번호 03161</div>
+                    <div class="text-block">사업자등록번호: 165-87-00119</div>
+                    <div class="text-block">클라우드 호스팅: Amazon Web Services Inc.</div>
+                    <div class="text-block"><a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1658700119">공정거래위원회 웹사이트</a></div>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>

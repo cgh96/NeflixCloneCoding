@@ -1,0 +1,11 @@
+genres { id, name }
+id
+overview
+
+baseURL: https://api.themoviedb.org/3
+posterURL: https://image.tmdb.org/t/p/original/[poster_path] (No Need API_KEYS)
+
+GET /movie/popular
+https://api.themoviedb.org/3/movie/popular?api_key=<<api_key>>&language=en-US&page=1
+
+7a2ff151953c7c5d8c726df5e662e936
