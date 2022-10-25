@@ -15,7 +15,7 @@
     - <img src="./READMEASSET/로그인.png" width="700px" height="400px"><br><br><br>
 
 
-## 초기화면(landing page) - 반응형 웹을 위해 주로 media query를 사용함.
+## 초기화면(landing page)
 
     초기화면 - 특징
     1) selector 커스텀
@@ -122,7 +122,7 @@
     ```
 
 <br><br><br><br>
-## Main페이지 - 주로 vw를 이용함.
+## Main페이지
 
     Main페이지 - 특징
     - TMDB api를 사용하여 carousel 제작
