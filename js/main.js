@@ -223,7 +223,7 @@ const searchDiv = document.querySelector('.search-div');
 const searchInput = document.querySelector('.search-input');
 const searchBox = document.querySelector('.search-box');
 
-searchTab.addEventListener('click', e => {
+searchIcon.addEventListener('click', e => {
     searchBox.style.display = "none";
     searchDiv.prepend(searchIcon);
     searchDiv.style.cssText = `
