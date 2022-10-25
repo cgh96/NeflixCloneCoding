@@ -244,7 +244,7 @@
 
         //main.js
         //아이콘 클릭 시, visibility: visible로 변화. 화면에 나타남.
-        searchTab.addEventListener('click', e => {
+        searchIcon.addEventListener('click', e => {
         searchBox.style.display = "none";
         searchDiv.prepend(searchIcon);
         searchDiv.style.cssText = `
